@@ -1,7 +1,7 @@
 {
   "name": "commonform-mscd",
   "version": "0.0.0",
-  "description": "annotate common forms with commentary from a Manual of Style for Contract Drafting",
+  "description": "annotate Common Forms with commentary from a Manual of Style for Contract Drafting",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "commonform/commonform-mscd",
   "license": "Apache-2.0",
