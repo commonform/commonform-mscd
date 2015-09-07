@@ -1,3 +1,5 @@
+This package is not endorsed by Ken Adams.
+
 ```javascript
 var mscd = require('commonform-mscd')
 var assert = require('assert')
