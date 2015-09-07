@@ -7,6 +7,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.3",
+    "escape-regexp": "0.0.1",
     "mscd": "kemitchell/mscd.json"
   },
   "devDependencies": {

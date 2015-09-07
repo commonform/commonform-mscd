@@ -1,3 +1,4 @@
+var escape = require('escape-regexp')
 var mscd = require('mscd')
 var regexpAnnotator = require('commonform-regexp-annotator')
 
@@ -17,7 +18,10 @@ var annotators = mscd
     var message = entryMessage(entry)
     return regexpAnnotator(
       entry.phrases.map(function(phrase) {
-        return new RegExp(phrase, 'i') }),
+        if (typeof phrase === 'string') {
+          return new RegExp(escape(phrase), 'i') }
+        else {
+          return new RegExp(phrase.re, 'i') } }),
       function(form, path) {
         return {
           message: message,
