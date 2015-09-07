@@ -24,6 +24,7 @@ var annotators = mscd
           return new RegExp(phrase.re, 'i') } }),
       function(form, path) {
         return {
+          level: 'info',
           message: message,
           path: path,
           source: 'commonform-mscd',
