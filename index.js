@@ -25,7 +25,7 @@ var annotators = mscd
     return regexpAnnotator(
       entry.phrases.map(function(phrase) {
         if (typeof phrase === 'string') {
-          return new RegExp(escape(phrase), 'i') }
+          return new RegExp(( '\\b' + escape(phrase) + '\\b' ), 'i') }
         else {
           return new RegExp(phrase.re, 'i') } }),
       function(form, path) {
