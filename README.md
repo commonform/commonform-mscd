@@ -9,7 +9,7 @@ assert.deepEqual(
   [ { level: 'info',
       message: (
         'Use standard English instead of "ab initio".' +
-        ' See MSCD 13.376; 13.377.' ),
+        ' See MSCD 13.376-13.377.' ),
       path: [ 'content', 0 ],
       source: 'commonform-mscd',
       url: null } ])

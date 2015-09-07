@@ -2,8 +2,14 @@ var escape = require('escape-regexp')
 var mscd = require('mscd')
 var regexpAnnotator = require('commonform-regexp-annotator')
 
+function sectionString(section) {
+  return (
+    typeof section === 'string' ?
+      section :
+      ( section.from + '-' + section.through ) ) }
+
 function citationList(list) {
-  return list.join('; ') }
+  return list.map(sectionString).join('; ') }
 
 function entryMessage(entry) {
   return (
