@@ -8,5 +8,12 @@
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.3",
     "mscd": "kemitchell/mscd.json"
+  },
+  "devDependencies": {
+    "defence-cli": "^1.0.1",
+    "replace-require-self": "^1.0.0"
+  },
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node"
   }
 }
