@@ -8,7 +8,7 @@
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.3",
     "escape-regexp": "0.0.1",
-    "mscd": "kemitchell/mscd.json"
+    "mscd": "^0.1.0"
   },
   "devDependencies": {
     "defence-cli": "^1.0.1",
