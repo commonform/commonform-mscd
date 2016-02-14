@@ -1,7 +1,7 @@
 {
   "name": "commonform-mscd",
   "description": "annotate Common Forms with commentary from a Manual of Style for Contract Drafting",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.3",
