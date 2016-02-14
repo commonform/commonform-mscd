@@ -1,10 +1,8 @@
 {
   "name": "commonform-mscd",
-  "version": "0.1.0",
   "description": "annotate Common Forms with commentary from a Manual of Style for Contract Drafting",
+  "version": "0.1.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
-  "repository": "commonform/commonform-mscd",
-  "license": "Apache-2.0",
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.3",
     "escape-regexp": "0.0.1",
@@ -14,6 +12,9 @@
     "defence-cli": "^1.0.1",
     "replace-require-self": "^1.0.0"
   },
+  "homepage": "https://commonform.github.io",
+  "license": "Apache-2.0",
+  "repository": "commonform/commonform-mscd",
   "scripts": {
     "test": "defence README.md | replace-require-self | node"
   }
