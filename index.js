@@ -1,5 +1,7 @@
 var escape = require('escape-regexp')
 var mscd = require('mscd')
+  .filter(function(element) {
+    return ( element.phrases.indexOf('agreement') < 0) })
 var regexpAnnotator = require('commonform-regexp-annotator')
 
 function sectionString(section) {
