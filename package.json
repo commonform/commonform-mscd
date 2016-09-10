@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "defence-cli": "^1.0.1",
-    "replace-require-self": "^1.0.0"
+    "replace-require-self": "^1.0.0",
+    "standard": "^8.0.0"
   },
   "files": [
     "LICENSE",
@@ -22,6 +23,7 @@
   "license": "Apache-2.0",
   "repository": "commonform/commonform-mscd",
   "scripts": {
-    "test": "defence README.md | replace-require-self | node"
+    "test": "defence README.md | replace-require-self | node",
+    "lint": "standard"
   }
 }
