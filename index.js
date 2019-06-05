@@ -7,14 +7,14 @@ var regexpAnnotator = require('commonform-regexp-annotator')
 function sectionString (section) {
   return (
     typeof section === 'string'
-    ? section
-    : (section.from + '-' + section.through)
+      ? section
+      : (section.from + '-' + section.through)
   )
 }
 
 function citationList (list) {
   return list.map(sectionString)
-  .join('; ')
+    .join('; ')
 }
 
 function entryMessage (entry) {
@@ -22,13 +22,13 @@ function entryMessage (entry) {
     entry.comment +
     (
       entry.citations
-      ? (' See ' + citationList(entry.citations) + '.')
-      : ''
+        ? (' See ' + citationList(entry.citations) + '.')
+        : ''
     ) +
     (
       entry.sections
-      ? (' See MSCD ' + citationList(entry.sections) + '.')
-      : ''
+        ? (' See MSCD ' + citationList(entry.sections) + '.')
+        : ''
     )
   )
 }
@@ -57,12 +57,12 @@ var annotators = mscd.map(function (entry) {
 
 function commonformMSCD (form) {
   return annotators
-  .map(function (annotator) {
-    return annotator(form)
-  })
-  .reduce(function (result, annotations) {
-    return result.concat(annotations)
-  }, [])
+    .map(function (annotator) {
+      return annotator(form)
+    })
+    .reduce(function (result, annotations) {
+      return result.concat(annotations)
+    }, [])
 }
 
 module.exports = commonformMSCD
