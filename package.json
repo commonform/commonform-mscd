@@ -9,7 +9,7 @@
     "mscd": "^0.1.0"
   },
   "devDependencies": {
-    "defence-cli": "^1.0.1",
+    "defence-cli": "^3.0.1",
     "replace-require-self": "^1.0.0",
     "standard": "^8.0.0",
     "standard-markdown": "^5.0.1"
