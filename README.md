@@ -3,8 +3,8 @@ This package is not endorsed by Ken Adams.
 ```javascript
 var mscd = require('commonform-mscd')
 var assert = require('assert')
-var form = {content: ['This contract is void ab initio.']}
-assert.deepEqual(
+var form = { content: ['This contract is void ab initio.'] }
+assert.deepStrictEqual(
   mscd(form),
   [
     {
