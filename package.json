@@ -4,7 +4,7 @@
   "version": "0.1.3",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
-    "commonform-regexp-annotator": "^1.0.3",
+    "commonform-regexp-annotator": "^2.0.0",
     "escape-regexp": "0.0.1",
     "mscd": "^0.1.0"
   },
