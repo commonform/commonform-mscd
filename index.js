@@ -1,8 +1,10 @@
-var escape = require('escape-regexp')
-var mscd = require('mscd').filter(function (element) {
+import escape from 'escape-regexp'
+import regexpAnnotator from 'commonform-regexp-annotator'
+import mscdData from 'mscd' with { type: 'json' }
+
+const mscd = mscdData.filter(function (element) {
   return element.phrases.indexOf('agreement') < 0
 })
-var regexpAnnotator = require('commonform-regexp-annotator')
 
 function sectionString (section) {
   return (
@@ -33,8 +35,8 @@ function entryMessage (entry) {
   )
 }
 
-var annotators = mscd.map(function (entry) {
-  var message = entryMessage(entry)
+const annotators = mscd.map(function (entry) {
+  const message = entryMessage(entry)
   return regexpAnnotator(
     entry.phrases.map(function (phrase) {
       if (typeof phrase === 'string') {
@@ -46,8 +48,8 @@ var annotators = mscd.map(function (entry) {
     function (form, path) {
       return {
         level: 'info',
-        message: message,
-        path: path,
+        message,
+        path,
         source: 'commonform-mscd',
         url: null
       }
@@ -55,7 +57,7 @@ var annotators = mscd.map(function (entry) {
   )
 })
 
-function commonformMSCD (form) {
+export default function commonformMSCD (form) {
   return annotators
     .map(function (annotator) {
       return annotator(form)
@@ -64,5 +66,3 @@ function commonformMSCD (form) {
       return result.concat(annotations)
     }, [])
 }
-
-module.exports = commonformMSCD
