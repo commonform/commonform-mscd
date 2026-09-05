@@ -13,12 +13,7 @@
   "devDependencies": {
     "defence-cli": "^3.0.1"
   },
-  "files": [
-    "LICENSE",
-    "NOTICE",
-    "README.md",
-    "index.js"
-  ],
+  "files": [],
   "homepage": "https://commonform.github.io",
   "license": "BlueOak-1.0.0",
   "repository": "commonform/commonform-mscd",
