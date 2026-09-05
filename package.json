@@ -11,9 +11,7 @@
     "mscd": "^0.1.0"
   },
   "devDependencies": {
-    "defence-cli": "^3.0.1",
-    "standard": "^13.0.2",
-    "standard-markdown": "^5.0.1"
+    "defence-cli": "^3.0.1"
   },
   "files": [
     "LICENSE",
